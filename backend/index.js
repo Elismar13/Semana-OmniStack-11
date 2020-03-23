@@ -6,7 +6,7 @@ app.listen( 3333 );
 
 app.get('/', (req, res) => {
     res.json({
-        'Nome':"AAA",
+        'Nome':"Hello, World!",
         "A":"sas"
     })
-})
+});
