@@ -1,12 +1,12 @@
 const express = require('express');
 
-const app = express();
+const routes = express.Router();
 
-app.listen( 3333 );
-
-app.get('/', (req, res) => {
+routes.get('/', (req, res) => {
     res.json({
         'Nome':"Hello, World!",
         "A":"sas"
     })
 });
+
+module.exports = routes;
