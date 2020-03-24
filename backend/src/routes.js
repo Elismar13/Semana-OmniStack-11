@@ -2,11 +2,9 @@ const express = require('express');
 
 const routes = express.Router();
 
-routes.get('/', (req, res) => {
-    res.json({
-        'Nome':"Hello, World!",
-        "A":"sas"
-    })
-});
+const ongController = require('../src/controllers/ongController');
+
+routes.get('/ongs', ongController.index);
+routes.post('/ongs', ongController.create);
 
 module.exports = routes;
