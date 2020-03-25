@@ -6,7 +6,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .register-container .content {
@@ -20,6 +20,10 @@
     align-items: center;
 }
 
+.register-container .content section {
+    width: 100%;
+    max-width: 380px;
+}
 .register-container .content section h1 {
     margin: 64px 0 32px;
     font-size: 32px;
@@ -41,10 +45,10 @@
     margin-top: 8px;
 }
 
-.register-container .content form input .input-group {
+.register-container .content form .input-group {
     display: flex;
 }
 
-.register-container .content form input .input-group  input + input {
+.register-container .content form .input-group  input + input {
     margin-left: 8px;
 }

@@ -11,7 +11,7 @@ import { FiArrowLeft } from 'react-icons/fi';
 export default function Register() {
     return (
         <div className="register-container">
-            <dic className="content">
+            <div className="content">
                 <section>
                     <img src={logoImg} alt="Be the Hero"/>
 
@@ -38,7 +38,7 @@ export default function Register() {
                         Cadrastar
                     </button>
                 </form>
-            </dic>
+            </div>
         </div>
     );
 }
