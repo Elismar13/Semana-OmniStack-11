@@ -1,0 +1,14 @@
+Entidades:
+	-ORG
+	-Caso (incident)
+
+Funcionalidades:
+	-ONG:
+		>Login de ONG
+		>Logout de ONG
+		>Cadrastro de ONG
+		>Listar casos específicos de uma ONG
+		>Listar todos os casos de uma ONG
+		>Listar todos os casos
+		>Entrar em contato com a ONG
+		
