@@ -1,10 +1,13 @@
 import React from 'react';
 
+import './global.css';
+
 import Header from './Header';
+import Routes from './routes/routes';
 
 function App() {
   return (
-    <Header title="Semana Omnistack"/>
+    <Routes />
   );
 }
 
