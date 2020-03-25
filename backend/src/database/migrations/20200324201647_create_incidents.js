@@ -11,7 +11,7 @@ exports.up = function(knex) {
       table.string('ong_id').notNullable();  
     
       //Chave estrangeira para o campo 'ong_id'
-      table.foreing('ong_id').reference('id').inTable('ongs');
+      table.foreign('ong_id').references('id').inTable('ongs');
     } )
   };
   
