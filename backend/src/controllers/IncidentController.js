@@ -24,6 +24,7 @@ module.exports = {
 
     async create(request, response) {
         const { title, description, value } = request.body;
+
         const ong_id = request.headers.authorization;
 
         //console.log(request.body, "ID:" + ong_id)
@@ -42,11 +43,14 @@ module.exports = {
         const { id } = request.params;
         const ong_id = request.headers.authorization;
 
+
         const incident = await connection('incidents')
             .where('id', id)
             .select('ong_id')
             .first();
         
+        console.log(incident.ong_id, ong_id)
+
         if(incident.ong_id != ong_id) {
             return response.status(401).json({ error:"Operation not permitted." });
         }
