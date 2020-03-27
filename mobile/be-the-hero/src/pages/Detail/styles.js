@@ -55,9 +55,8 @@ export default StyleSheet.create({
   },
 
   incidentValue: {
-    marginTop: 2,
+    marginTop: 8,
     fontSize: 15,
-    marginBottom: 24,
     color: '#737380'
   },
 
@@ -69,8 +68,6 @@ export default StyleSheet.create({
 
 
   detailsButtonText: {
-    color: '#e02041',
-    fontSize: 14,
-    fontWeight: 'bold',
+    
   }
 });
