@@ -1,16 +1,18 @@
 const express = require('express');
-
-const routes = express.Router();
+const { celebrate, Joi, Segments } = require('celebrate');
 
 const SessionController = require('../src/controllers/SessionControlers');
 const ongController = require('../src/controllers/ongController');
 const IncidentController = require('../src/controllers/IncidentController');
 const ProfileController = require('../src/controllers/ProfileController');
 
+const routes = express.Router();
+
+
 routes.post('/sessions', SessionController.create);
 
 routes.get('/ongs', ongController.index);
-routes.post('/ongs', ongController.create);
+routes.post('/ongs', celebrate(), ongController.create);
 routes.delete('/ongs', ongController.delete);
 
 routes.get('/profiles', ProfileController.index);
